@@ -1,5 +1,5 @@
 import flet as ft
-from components.navbutton import nav_button  # Ton bouton de nav personnalisé
+from ui import nav_button
 
 def sidebar(current_route: str, on_nav) -> ft.Container:
 

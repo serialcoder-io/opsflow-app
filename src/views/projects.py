@@ -1,5 +1,4 @@
 import flet as ft
-from components.project_path_picker import ProjectPathPicker
 
 def projects_view(page: ft.Page):
     def dropdown_changed(e):

@@ -1,5 +1,5 @@
 import flet as ft
-from components.sidebar import sidebar
+from components.common.sidebar import sidebar
 
 def images_view(page: ft.Page):
     return ft.Column([

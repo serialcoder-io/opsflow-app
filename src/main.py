@@ -1,5 +1,5 @@
 import flet as ft
-from components.sidebar import sidebar
+from components  import sidebar
 from views import projects, images, containers, not_found
 
 def main(page: ft.Page):
@@ -37,7 +37,6 @@ def main(page: ft.Page):
             expand=True,
         )
     )
-
     page.go(page.route)
 
 ft.app(target=main)
