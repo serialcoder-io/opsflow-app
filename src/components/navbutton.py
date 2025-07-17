@@ -4,7 +4,7 @@ def nav_button(label: str, route: str, icon=ft.Icons.CIRCLE, current_route="", o
     is_active = current_route == route
     return ft.Container(
         border_radius=6,
-        padding=2,
+        padding=10,
         bgcolor=ft.Colors.BLUE_GREY_100 if is_active else ft.Colors.TRANSPARENT,
         border=ft.border.only(
             left=ft.BorderSide(4, ft.Colors.BLUE_400) if is_active else ft.BorderSide(0, ft.Colors.TRANSPARENT)
