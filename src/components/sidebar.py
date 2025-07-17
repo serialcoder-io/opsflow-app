@@ -26,6 +26,7 @@ def sidebar(current_route: str, on_nav) -> ft.Container:
         width=220,
         expand=True,
         bgcolor=ft.Colors.BLUE_GREY_50,
+        border_radius=10,
         content=ft.Column(
             [
                 # sidebar header(title)
@@ -52,6 +53,6 @@ def sidebar(current_route: str, on_nav) -> ft.Container:
             ],
             spacing=0,
             tight=True,
-            expand=True
+            expand=True,
         )
     )

@@ -5,10 +5,10 @@ def nav_button(label: str, route: str, icon=ft.Icons.CIRCLE, current_route="", o
     return ft.Container(
         border_radius=6,
         padding=10,
-        bgcolor=ft.Colors.BLUE_GREY_100 if is_active else ft.Colors.TRANSPARENT,
+        bgcolor=ft.Colors.GREY_300 if is_active else ft.Colors.TRANSPARENT,
         border=ft.border.only(
-            left=ft.BorderSide(4, ft.Colors.BLUE_400) if is_active else ft.BorderSide(0, ft.Colors.TRANSPARENT)
-        ),
+            left=ft.BorderSide(4, ft.Colors.BLUE_900)
+        ) if is_active else None,
         on_click=lambda e: on_nav(route),
         content=ft.Row(
             vertical_alignment=ft.CrossAxisAlignment.CENTER,
